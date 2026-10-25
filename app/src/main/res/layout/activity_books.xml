@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/header_background"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📚"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Books"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add and manage your library books"
+                android:textColor="#E3F2FD"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+
+        <!-- ADD BOOK SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Book"
+                android:textColor="#263238"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/bookName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Book Name"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Author Name"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Category"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Quantity"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/addBookButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="＋  ADD BOOK"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="18dp" />
+
+
+            <!-- SEARCH -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Books"
+                android:textColor="#263238"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/searchBook"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Search by book name"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:background="@drawable/input_background" />
+
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:text="SEARCH"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- BOOK LIST TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book List"
+            android:textColor="#263238"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp" />
+
+
+        <!-- BOOK LIST -->
+        <ListView
+            android:id="@+id/bookList"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+
+</ScrollView>

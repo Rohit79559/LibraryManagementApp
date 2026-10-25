@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="45dp"
+        android:paddingBottom="30dp">
+
+        <!-- LIBRARY LOGO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📖"
+            android:textSize="72sp"
+            android:gravity="center" />
+
+        <!-- MAIN HEADING -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:letterSpacing="0.02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MANAGEMENT"
+            android:textColor="#E8EAF6"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.22"
+            android:layout_marginTop="-2dp" />
+
+        <!-- TAGLINE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="READ  •  LEARN  •  GROW"
+            android:textColor="#DDE7FF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.12"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="28dp" />
+
+
+        <!-- LOGIN CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/login_card_background"
+            android:elevation="10dp"
+            android:padding="24dp">
+
+            <!-- WELCOME -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back!"
+                android:textColor="#172B4D"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+
+            <!-- USERNAME LABEL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:textColor="#425466"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="7dp" />
+
+            <!-- USERNAME -->
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter username"
+                android:textColor="#263238"
+                android:textColorHint="#9AA7B8"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="18dp" />
+
+
+            <!-- PASSWORD LABEL -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textColor="#425466"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="7dp" />
+
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter password"
+                android:textColor="#263238"
+                android:textColorHint="#9AA7B8"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/input_background"
+                android:layout_marginBottom="24dp" />
+
+
+            <!-- LOGIN BUTTON -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="LOGIN   →"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#1EA01E"
+                android:elevation="5dp" />
+
+            <!-- BOTTOM TEXT -->
+
+        </LinearLayout>
+
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📚  A library is a gateway to knowledge"
+            android:textColor="#DDE7FF"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>
